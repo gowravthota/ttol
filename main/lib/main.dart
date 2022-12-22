@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:startup_namer/start.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(StartMenuScreen());
 }
 
 class MyApp extends StatelessWidget {

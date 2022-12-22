@@ -4,15 +4,17 @@ class StartMenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: FlatButton(
-          color: Colors.blue,
-          textColor: Colors.white,
-          onPressed: () {
-            // Navigate to main screen
-            Navigator.pushNamed(context, '/main');
-          },
-          child: Text('Start'),
+      body: Container(
+        child: Center(
+          child: FlatButton(
+            color: Colors.blue,
+            textColor: Colors.white,
+            onPressed: () {
+              // Navigate to main screen
+              Navigator.pushNamed(context, '/main');
+            },
+            child: Text('Start'),
+          ),
         ),
       ),
     );
@@ -32,8 +34,10 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Main Screen'),
       ),
-      body: Center(
-        child: Text('This is the main screen'),
+      body: Container(
+        child: Center(
+          child: Text('This is the main screen'),
+        ),
       ),
     );
   }
