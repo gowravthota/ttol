@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "LegionMobile-master",
+            "name": "main",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "LegionMobile-master (profile mode)",
+            "name": "main (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "LegionMobile-master (release mode)",
+            "name": "main (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
