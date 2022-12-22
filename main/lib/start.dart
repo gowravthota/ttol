@@ -19,7 +19,7 @@ class StartMenuScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => RunGame(),
+                    builder: (context) => const RunGame(),
                   ),
                 );
               },
