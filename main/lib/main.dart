@@ -9,12 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    var myVar = 'lorem ipsum';
+    var myVar = 'these nuts on your chin';
     int yayDartSupportsVarTypes = 3;
 
     return MaterialApp(
-      title: 'Legion Mobile',
+      title: 'Ayo',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Legion Mobile'),
