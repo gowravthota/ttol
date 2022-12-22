@@ -1,54 +1,42 @@
 import 'package:flutter/material.dart';
+import 'package:startup_namer/game_screen.dart';
 
 class StartMenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Center(
-          child: FlatButton(
-            color: Colors.blue,
-            textColor: Colors.white,
-            onPressed: () {
-              // Navigate to main screen
-              Navigator.pushNamed(context, '/main');
-            },
-            child: Text('Start'),
-          ),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Start Menu'),
+        ),
+        body: Column(
+          children: [
+            ElevatedButton(
+              child: Text('Start Game'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Game(questions: questions),
+                  ),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: Text('Options'),
+              onPressed: () {
+// TODO: Add options screen
+              },
+            ),
+            ElevatedButton(
+              child: Text('Quit'),
+              onPressed: () {
+// TODO: Add quit functionality
+              },
+            ),
+          ],
         ),
       ),
     );
   }
-
-  FlatButton(
-      {required MaterialColor color,
-      required Color textColor,
-      required Null Function() onPressed,
-      required Text child}) {}
-}
-
-class MainScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Main Screen'),
-      ),
-      body: Container(
-        child: Center(
-          child: Text('This is the main screen'),
-        ),
-      ),
-    );
-  }
-}
-
-void main() {
-  runApp(MaterialApp(
-    initialRoute: '/',
-    routes: {
-      '/': (context) => StartMenuScreen(),
-      '/main': (context) => MainScreen(),
-    },
-  ));
 }
