@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:startup_namer/game_screen.dart';
+import 'package:startup_namer/testChess.dart';
 
 class StartMenuScreen extends StatelessWidget {
   const StartMenuScreen({super.key});
@@ -25,12 +26,18 @@ class StartMenuScreen extends StatelessWidget {
               },
             ),
             ElevatedButton(
-              child: const Text('Options'),
+              child: const Text('Chess Tester'),
               onPressed: () {
-// ignore: todo
-// TODO: Add options screen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ChessGame(),
+                  ),
+                );
               },
             ),
+// ignore: todo
+// TODO: Add options screen
             ElevatedButton(
               child: Text('Quit'),
               onPressed: () {
