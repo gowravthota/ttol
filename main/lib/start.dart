@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:startup_namer/game_screen.dart';
-import 'package:startup_namer/testChess.dart';
+import 'package:startup_namer/test_chess.dart';
 
 class StartMenuScreen extends StatelessWidget {
   const StartMenuScreen({super.key});
@@ -39,7 +39,7 @@ class StartMenuScreen extends StatelessWidget {
 // ignore: todo
 // TODO: Add options screen
             ElevatedButton(
-              child: Text('Quit'),
+              child: const Text('Quit'),
               onPressed: () {
 // ignore: todo
 // TODO: Add quit functionality
